@@ -1,7 +1,18 @@
-API rest in AdonisJS with email dispatch.
-Test can be realized on Insomnia or other apllication like Postman, based on the following structure:
+<h1 align="center">Welcome to adonisjs 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-4.1.0-blue.svg?cacheSeconds=2592000" />
+  <a href="#" target="_blank">
+    <img alt="License: UNLICENSED" src="https://img.shields.io/badge/License-UNLICENSED-yellow.svg" />
+  </a>
+</p>
 
---------- User:
+> Adonisjs boilerplate for API server with pre-configured JWT
+
+<p>API rest in AdonisJS with email dispatch.</p>
+<p>Test can be realized on Insomnia or other apllication like Postman, based on the following structure: </p>
+
+## User:
+
 	|--- POST: {{ base_url  }}/users - Route to create a user 
 	{
 		"username": ,
@@ -19,14 +30,16 @@ Test can be realized on Insomnia or other apllication like Postman, based on the
 			]
 	}
 
---------- Session:
+## Session:
+
 	|--- POST: {{ base_url  }}/sessions - Route to login.
 	{
 		"username": ,
 		"email": 
 	}
 
---------- ForgotPassword:
+## ForgotPassword:
+
 	|--- POST: {{ base_url  }}/passwords - Route to request password reset.
 	{
 		"email": ,
@@ -40,15 +53,16 @@ Test can be realized on Insomnia or other apllication like Postman, based on the
 		"password_confirmation": 
 	}
 
---------- Files: *Using Authentication Middleware
-	|--- POST: {{ base_url  }}/files - Route to post a file
-	Multipart Form:
-	file
+## Files: 
+    |--- POST: {{ base_url  }}/files - Route to post a file
+	Multipart:
+    file:
 
 	|--- GET: {{ base_url  }}/files/:id - Route to show a file
 	NO BODY
 
---------- Project: *Using Authentication Middleware 
+## Project: *Using Authentication Middleware 
+
 	|--- POST: {{ base_url  }}/projects - Route to create a project
 	{
 		"title": ,
@@ -70,7 +84,8 @@ Test can be realized on Insomnia or other apllication like Postman, based on the
 	|--- GET: {{ base_url  }}/projects?page=:id - Route to show all projects, with pagination
 	NO BODY
 
---------- Task: *Using Authentication Middleware 
+## Task: *Using Authentication Middleware 
+
 	|--- POST: {{ base_url  }}/projects/:id/tasks - Route to create a project task
 	{
 		"title": ,
@@ -97,3 +112,6 @@ Test can be realized on Insomnia or other apllication like Postman, based on the
 
 	|--- GET: {{ base_url  }}/projects/:id/tasks - Route to show all tasks of the project
 	NO BODY
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
