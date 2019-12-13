@@ -53,7 +53,7 @@
 		"password_confirmation": 
 	}
 
-## Files: 
+## Files: *Using Authentication Middleware
     |--- POST: {{ base_url  }}/files - Route to post a file
 	Multipart:
     file:
